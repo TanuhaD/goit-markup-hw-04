@@ -58,11 +58,9 @@ h3 {
   padding-bottom: 94px;
 }
 
-.section.no-padding {
+.no-padding {
   padding-top: 0;
-  padding-bottom: 0;
 }
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -158,6 +156,9 @@ img {
   margin-bottom: 30px;
 }
 .portfolio .projekt .wrapper {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
@@ -187,7 +188,8 @@ img {
 .hero {
   text-align: center;
   background-color: #2f303a;
-  width: 1600 px;
+  width: 1600px;
+  height: 600px;
 }
 
 .hero-title {
@@ -219,23 +221,30 @@ img {
 }
 /* button */
 .button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
   display: inline-block;
-  border-radius: 6px;
-  margin-bottom: 34px;
-  display: inline-block;
+  border: none;
+  background-color: #f5f4fa;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 50px;
   cursor: pointer;
   font-family: inherit;
-  text-align: center;
+  line-height: 1.6em;
   letter-spacing: 0.03em;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.8em;
-  text-align: center;
+  color: var(--title-text-color);
 }
 .button:hover,
 .button:focus {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* studio */
 .button-studio {
@@ -292,7 +301,7 @@ img {
   line-height: 1.8;
   color: var(--primary-text-color);
 }
-/* work */
+/* what we do */
 
 .section-title {
   margin-top: 0;
@@ -300,6 +309,8 @@ img {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+  color: var(--title-text-color);
+  color: var(--title-text-color);
   color: var(--title-text-color);
 }
 
@@ -335,8 +346,14 @@ img {
   display: flex;
 }
 
+.cards {
+  padding-top: 30px;
+}
+.cards .title-name {
+  padding-bottom: 10px;
+}
+
 .title-name {
-  margin-bottom: 10 px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -346,6 +363,7 @@ img {
 
 .job-title {
   margin-top: 0;
+  padding-bottom: 0;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -371,7 +389,7 @@ img {
 /* footer */
 .footer {
   background-color: #2f303a;
-  max-width: 1600 px;
+  max-width: 1600px;
 }
 .footer .container {
   padding-top: 60px;
