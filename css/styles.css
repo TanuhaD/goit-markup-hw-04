@@ -425,6 +425,9 @@ background-image: url(../img/clock.png);
   margin-right: 0;
 }
 
+/*  svg іконкі для наша команда */
+.team-list.photo
+
 /* footer */
 .footer {
   background-color: #2f303a;
