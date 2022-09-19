@@ -129,10 +129,7 @@ img {
 .test-link:focus {
   color: var(--accent-color);
 }
-.icon-header:hover,
-.icon-header:focus{
-  fill: var(--accent-color);
-}
+
 /* logo nav */
 .logo {
   margin-top: 0px;
