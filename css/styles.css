@@ -125,17 +125,12 @@ img {
   color: var(--primary-text-color);
 }
 
-.test-link:hover,
-.test-link:focus {
-  color: var(--accent-color);
+ .test-link:hover,
+ .test-link:focus{
+  color:var(--accent-color);
 }
-.ikon-header{
-fill:var(--primary-text-color);
-}
-.icon-header:hover,
-.icon-header:focus{
-  fill: var(--accent-color);
-}
+ 
+ 
 /* logo nav */
 .logo {
   margin-top: 0px;
