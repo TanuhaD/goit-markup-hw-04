@@ -161,8 +161,16 @@ img {
   padding-left: 24px;
   padding-right: 24px;
   border: 1px solid #eeeeee;
-  border-top: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
 }
+ .projekt-list:hover,
+.projekt-list:focus{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+}
+
+
 
 .projekt-list:nth-child(3n) {
   margin-right: 0;
@@ -303,7 +311,7 @@ background-repeat: no-repeat;
 background-position: center;
 background-color:#F5F4FA;
 border-radius: 4px;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+/* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 
   
 }
@@ -318,8 +326,6 @@ background-image: url(../img/clock.png);
 .feature-item.icon-austranavt::before {
   background-image: url(../img/astronaut.png);
 }
-
-
 
 .item:last-child {
   margin-right: 0;
@@ -369,6 +375,7 @@ background-image: url(../img/clock.png);
 
 /* team */
 .team {
+  display: flex;
   background-color: #f5f4fa;
 }
 
@@ -383,6 +390,8 @@ background-image: url(../img/clock.png);
 
 .team-list {
   display: flex;
+  width: 270px;
+  height: 428px;
 }
 
 .cards {
@@ -426,12 +435,96 @@ background-image: url(../img/clock.png);
 }
 
 /*  svg іконкі для наша команда */
-.team-list.photo
+.list-icon-team{
+  display: flex;
+  margin: 16px 32px 30px 32px;
+   width: 270px;
+ height: 44px;
+}
+.item-team:{
+  margin-top: 10px;
+  }
+
+   .link-team{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50px;
+    fill:#AFB1B8;
+}
+
+.link-team:hover,
+.link-team:focus{
+  fill:var(--primary-bg-color);
+  background-color:var(--accent-color) ;
+}
+
+
+
+/* permanent clients  */
+.client{
+ display: flex;
+background-color: var(--primary-bg-color);
+}
+
+.client-title{
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.client-list{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right:30px;
+  }
+ .client-item {
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
+  display:block;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-bg-color);
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8 ;
+  border-radius:4px;
+  
+  }
+
+  .client-list .client-item {
+    width:170px;
+    margin-right:30px;
+  } 
+   .client-item:not(:last-child){
+   margin-right:o;
+  }
+
+.icon{
+    fill:#AFB1B8;
+  } 
+ 
+ .client-item .icon:hover
+{
+fill:var(--accent-color);
+border:var(--accent-color);
+}
+
+ 
+
 
 /* footer */
 .footer {
   background-color: #2f303a;
+
 }
+
 .footer .container {
   padding-top: 60px;
 }
@@ -467,3 +560,52 @@ background-image: url(../img/clock.png);
 .link:focus {
   color: var(--accent-color);
 }
+/* приєднуйся */
+
+.footer-box{
+  display: flex;
+}
+.join{
+  display: flex;
+  width: 206px;
+  height: 80px;
+  
+}
+.title-footer {
+  margin-left: 70px;
+  font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.list-icon-footer{
+  margin-left: 70px;
+padding-top: 20px;
+display: flex;
+flex-wrap: nowrap;
+width: 206px;
+height: 44px;
+}
+.item-icon-footer{
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.link-icon-fotter{
+display: flex;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+fill:var(--primary-bg-color);
+}
+.link-icon-fotter:hover,
+.link-icon-fotter:focus{
+  background-color: var(--accent-color);
+}
+.icon-footer{
+  fill:var(--primary-bg-color);
+}
+
+
