@@ -129,6 +129,10 @@ img {
  .test-link:focus{
   color:var(--accent-color);
 }
+
+.icon-header{
+  fill:currentColor;
+}
  
  
 /* logo nav */
